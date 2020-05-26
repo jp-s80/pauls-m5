@@ -22,8 +22,8 @@
   "gridUnits": "m",
   "primaryTokenAttribute": "lebenspunkte",
   "secondaryTokenAttribute": "ausdauerpunkte",
-  "url": "",
-  "manifest": "",
-  "download": "",
+  "url": "https://github.com/jp-s80/pauls-m5",
+  "manifest": "https://github.com/jp-s80/pauls-m5/master/system.json",
+  "download": "https://github.com/jp-s80/pauls-m5/archive/master.zip",
   "license": "LICENSE.txt"
 }
