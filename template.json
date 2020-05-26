@@ -1,0 +1,594 @@
+{
+  "Actor": {
+    "types": ["character"],
+    "templates": {
+      "base": {
+        "lebenspunkte": {
+          "value": 12,
+          "min": 0,
+          "max": 12
+        },
+        "ausdauerpunkte": {
+          "value": 15,
+          "min": 0,
+          "max": 15
+        }
+      }
+    },
+    "character": {
+      "templates": ["base"],
+      "biography": "",
+      "attributes": {
+        "level": {
+          "value": 1
+        }
+      },
+      "abilities": {
+
+        "St": {
+          "label": "Stärke",
+          "value": 50,
+          "modifier": []
+        },
+        "Ko":{
+          "label": "Konstitution",
+          "value": 55,
+          "modifier": []
+        },
+        "Gs":{
+          "label": "Geschicklichkeit",
+          "value": 60,
+          "modifier": []
+        },
+        "Gw":{
+          "label": "Gewandheit",
+          "value": 65,
+          "modifier": []
+        },
+        "In":{
+          "label": "Intelligenz",
+          "value": 70,
+          "modifier": []
+        },
+        "Zt":{
+          "label": "Zaubertalent",
+          "value": 75,
+          "modifier": []
+        },
+        "pA":{
+          "label": "persönliche Ausstrahlung",
+          "value": 80,
+          "modifier": []
+        },
+        "Au":{
+          "label": "Aussehen",
+          "value": 85,
+          "modifier": []
+        },
+        "Wk":{
+          "label": "Willenskraft",
+          "value": 90,
+          "modifier": []
+        }
+      },
+
+      "erweitert": {
+        "B":{
+          "label": "Bewegungsweite",
+          "value": 24,
+          "rkmod": 0,
+          "fertigkeitsmod": 0
+        },
+        "ausdauerbonus":{
+          "label": "Ausdauerbonus",
+          "shortcut": "AusB",
+          "value": 0
+        },
+        "angriffsbonus":{
+          "label": "Angriffsbonus",
+          "shortcut": "AnB",
+          "value": 0,
+          "rkmod": 0
+        },
+        "schadensbonus":{
+          "label": "Schadensbonus",
+          "shortcut": "SchB",
+          "value": 0,
+          "rkmod": 0
+        },
+        "abwehrbonus":{
+          "label": "Abwehrbonus",
+          "shortcut": "AbB",
+          "value": 0,
+          "rkmod": 0
+        },
+        "zaubern":{
+          "label": "Zaubern",
+          "shortcut": "Z",
+          "value": 2  
+        },
+        "zauberbonus":{
+          "label": "Zauberbonus",
+          "shortcut": "ZauB",
+          "value": 0
+        },
+        "psyB":{
+          "label": "Resistenzbonus Geistesmagie",
+          "value": 0
+        },
+        "phyB":{
+          "label": "Resistenzbonus Körpermagie",
+          "value": 0
+        }
+  
+      },
+      "defensive":{
+  
+        "abwehr": {
+          "label": "Abwehr",
+          "shortcut": "Abw",
+          "value": 10
+        },
+        "RK": {
+          "label": "Rüstungsklasse",
+          "shortcut": "RK",
+          "rkname": "ohne Rüstung",
+          "value": 0,
+          "rkmod": 0,
+          "gwmod": 0,
+          "fertigkeitsmod": 0
+        },
+        "psyRes": {
+          "label": "Resistenz gegen Geistesmagie",
+          "value": 10
+        },
+        "phyRes":{
+          "label": "Resistenz gegen Körpermagie",
+          "value": 10  
+        }
+    
+      },
+  
+      "fertigkeiten": {
+        
+        "akrobatik":{
+          "label": "Akrobatik",
+          "attribut": "Gw",
+          "typ": "bewegung",
+          "value": 6
+        },
+        "alchimie":{
+          "label": "Alchimie",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "anfuehren":{
+          "label": "Anführen",
+          "typ": "sozial",
+          "attribut": "pA",
+          "value": 6
+        },
+        "athletik":{
+          "label": "Athletik",
+          "typ": "körperbeherrschung",
+          "attribut": "St",
+          "value": 0
+        },
+        "balancieren":{
+          "label": "Balancieren",
+          "typ": "bewegung",
+          "attribut": "Gw",
+          "value": 6
+        },
+        "beidhaendigerKampf":{
+          "label": "Beidhändiger Kampf",
+          "typ": "kampf",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "beredsamkeit":{
+          "label": "Beredsamkeit",
+          "typ": "sozial",
+          "attribut": "pA",
+          "value": 3
+        },
+        "betaeuben":{
+          "label": "Betäuben",
+          "typ": "kampf",
+          "attribut": "Gs",
+          "value": 6
+        },
+        "bootfahren":{
+          "label": "Bootfahren",
+          "typ": "bewegung",
+          "attribut": "Gs",
+          "value": 3
+        },
+        "ersteHilfe":{
+          "label": "Erste Hilfe",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "etikette":{
+          "label": "Etikette",
+          "typ": "sozial",
+          "attribut": "In",
+          "value": 0
+        },
+        "faelschen":{
+          "label": "Fälschen",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "fallenEntdecken":{
+          "label": "Fallen entdecken",
+          "typ": "entdeckung",
+          "attribut": "In",
+          "value": 0
+        },
+        "fallenmechanik":{
+          "label": "Fallenmechanik",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "fechten":{
+          "label": "Fechten",
+          "typ": "kampf",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "gassenwissen":{
+          "label": "Gassenwissen",
+          "typ": "sozial",
+          "attribut": "In",
+          "value": 0
+        },
+        "gaukeln":{
+          "label": "Gaukeln",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "gelaendelauf":{
+          "label": "Geländelauf",
+          "typ": "bewegung",
+          "attribut": "Gw",
+          "value": 6
+        },
+        "geraetekunde":{
+          "label": "Gerätekunde",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "gechaeftssinn":{
+          "label": "Geschäftssinn",
+          "typ": "sozial",
+          "attribut": "In",
+          "value": 0
+        },
+        "gluecksspiel":{
+          "label": "Glücksspiel",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "heilkunde":{
+          "label": "Heilkunde",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "kampfInVollruestung":{
+          "label": "Kampf in Vollrüstung",
+          "typ": "kampf",
+          "attribut": "St",
+          "value": 0
+        },
+        "klettern":{
+          "label": "Klettern",
+          "typ": "bewegung",
+          "attribut": "St",
+          "value": 6
+        },
+        "landeskunde":{
+          "label": "Landeskunde",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 6
+        },
+        "laufen":{
+          "label": "Laufen",
+          "typ": "bewegung",
+          "attribut": "Ko",
+          "value": 0
+        },
+        "lesenVonZauberschrift":{
+          "label": "Lesen von Zauberschrift",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "meditieren":{
+          "label": "Meditieren",
+          "typ": "körperbeherrschung",
+          "attribut": "Wk",
+          "value": 0
+        },
+        "menschenkenntnis":{
+          "label": "Menschenkenntnis",
+          "typ": "sozial",
+          "attribut": "In",
+          "value": 3
+        },
+        "meucheln":{
+          "label": "Meucheln",
+          "typ": "kampf",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "musizieren":{
+          "label": "Musizieren",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "naturkunde":{
+          "label": "Naturkunde",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "pflanzenkunde":{
+          "label": "Pflanzenkunde",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "reiten":{
+          "label": "Reiten",
+          "typ": "bewegung",
+          "attribut": "Gw",
+          "value": 6
+        },
+        "reiterkampf":{
+          "label": "Reiterkampf",
+          "typ": "kampf",
+          "attribut": "Gw",
+          "value": 0
+        },
+        "scharfschiessen":{
+          "label": "Scharfschießen",
+          "typ": "kampf",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "schleichen":{
+          "label": "Schleichen",
+          "typ": "bewegung",
+          "attribut": "Gw",
+          "value": 3
+        },
+        "schloesserOeffnen":{
+          "label": "Schlösser öffnen",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "schreiben":{
+          "label": "Schreiben Sprache",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "schwimmen":{
+          "label": "Schwimmen",
+          "typ": "bewegung",
+          "attribut": "Gw",
+          "value": 3
+        },
+        "seilkunst":{
+          "label": "Seilkunst",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 3
+        },
+        "sprache":{
+          "label": "Sprache sprechen",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "spurensuche":{
+          "label": "Spurensuche",
+          "typ": "entdeckung",
+          "attribut": "In",
+          "value": 0
+        },
+        "stehlen":{
+          "label": "Stehlen",
+          "typ": "fingerfertigkeit",
+          "attribut": "Gs",
+          "value": 3
+        },
+        "tarnen":{
+          "label": "Tarnen",
+          "typ": "entdeckung",
+          "attribut": "Gw",
+          "value": 3
+        },
+        "tauchen":{
+          "label": "Tauchen",
+          "typ": "bewegung",
+          "attribut": "Ko",
+          "value": 6
+        },
+        "tierkunde":{
+          "label": "Tierkunde",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        },
+        "Ueberleben":{
+          "label": "Überleben",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 6
+        },
+        "verfuehren":{
+          "label": "Verführen",
+          "typ": "sozial",
+          "attribut": "pA",
+          "value": 3
+        },
+        "verhoeren":{
+          "label": "Verhören",
+          "typ": "sozial",
+          "attribut": "pA",
+          "value": 3
+        },
+        "verstellen":{
+          "label": "Verstellen",
+          "typ": "sozial",
+          "attribut": "pA",
+          "value": 3
+        },
+        "wagenlenken":{
+          "label": "Wagenlenken",
+          "typ": "bewegung",
+          "attribut": "Gs",
+          "value": 0
+        },
+        "zauberkunde":{
+          "label": "Zauberkunde",
+          "typ": "wissen",
+          "attribut": "In",
+          "value": 0
+        }
+  
+  
+      },
+      "waffenfertigkeiten":{
+        "einhandschlagwaffen":{
+          "label": "Einhandschlagwaffen",
+          "value": 4
+        },
+        "einhandschwerter":{
+          "label": "Einhandschwerter",
+          "value": 4
+        },
+        "fechtwaffen":{
+          "label": "Fechtwaffen",
+          "value": 4
+        },
+        "kettenwaffen":{
+          "label": "Kettenwaffen",
+          "value": 4
+        },
+        "spiesswaffen":{
+          "label": "Spießwaffen",
+          "value": 4
+        },
+        "stichwaffen":{
+          "label": "Stichwaffen",
+          "value": 4
+        },
+        "stockwaffen":{
+          "label": "Stockwaffen",
+          "value": 4
+        },
+        "zauberstaebe":{
+          "label": "Zauberstäbe",
+          "value": 4
+        },
+        "zweihandschlagwaffen":{
+          "label": "Zweihandschlagwaffen",
+          "value": 4
+        },
+        "zweihandschwerter":{
+          "label": "Zweihandschwerter",
+          "value": 4
+        },
+        "waffenloserKampf":{
+          "label": "waffenloser Kampf",
+          "value": 4
+        },
+        "stielwurfwaffen":{
+          "label": "Stielwurfwaffen",
+          "value": 4
+        },
+        "wurfklingen":{
+          "label": "Wurfklingen",
+          "value": 4
+        },
+        "wurfspiesse":{
+          "label": "Wurfspieße",
+          "value": 4
+        },
+        "armbrust":{
+          "label": "Armbrust",
+          "value": 4
+        },
+        "blasrohr":{
+          "label": "Blasrohr",
+          "value": 4
+        },
+        "bogen":{
+          "label": "Bogen",
+          "value": 4
+        },
+        "schleuder":{
+          "label": "Schleuder",
+          "value": 4
+        }
+  
+      },
+      "verteidigungswaffen":{
+  
+        "schilde":{
+          "label": "Schilde",
+          "value": 0
+        },
+        "parrierwaffen":{
+          "label": "Parrierwaffen",
+          "value": 0
+        }
+  
+      }
+    }
+  },
+  "Item": {
+    "types": ["weapon","armor","item", "feature", "spell"],
+    "templates": {
+      "base": {
+        "description": ""
+      }
+    },
+    "weapon": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0
+    },
+    "armor": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0
+    },
+    "item": {
+      "templates": ["base"],
+      "quantity": 1,
+      "weight": 0
+    },
+    "feature": {
+      "templates": ["base"]
+    },
+    "spell": {
+      "templates": ["base"],
+      "spellLevel": 1
+    }
+  }
+}

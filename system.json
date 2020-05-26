@@ -1,0 +1,29 @@
+{
+  "name": "midgard5",
+  "title": "Midgard5",
+  "description": "The Midgard5 system for FoundryVTT!",
+  "version": "1.0.3",
+  "minimumCoreVersion": "0.5.5",
+  "compatibleCoreVersion": "0.5.5",
+  "templateVersion": 2,
+  "author": "John Doe",
+  "esmodules": ["module/midgard5.js"],
+  "styles": ["css/midgard5.css"],
+  "scripts": [],
+  "packs": [],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "gridDistance": 1,
+  "gridUnits": "m",
+  "primaryTokenAttribute": "lebenspunkte",
+  "secondaryTokenAttribute": "ausdauerpunkte",
+  "url": "",
+  "manifest": "",
+  "download": "",
+  "license": "LICENSE.txt"
+}
