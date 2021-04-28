@@ -562,7 +562,7 @@
     }
   },
   "Item": {
-    "types": ["weapon","armor","item", "feature", "spell","skills"],
+    "types": ["weapon","armor","item", "feature", "spell"],
     "templates": {
       "base": {
         "description": ""
@@ -589,9 +589,6 @@
     "spell": {
       "templates": ["base"],
       "spellLevel": 1
-    },
-	"skills": {
-      "templates": ["base"]
-    },
+    }
   }
 }
