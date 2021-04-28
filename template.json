@@ -17,7 +17,7 @@
     },
     "character": {
       "templates": ["base"],
-      "biography": "",
+      "biography": "Test",
       "attributes": {
         "level": {
           "value": 1
@@ -562,7 +562,7 @@
     }
   },
   "Item": {
-    "types": ["weapon","armor","item", "feature", "spell"],
+    "types": ["weapon","armor","item", "feature", "spell","skills"],
     "templates": {
       "base": {
         "description": ""
@@ -589,6 +589,9 @@
     "spell": {
       "templates": ["base"],
       "spellLevel": 1
-    }
+    },
+	"skills": {
+      "templates": ["base"]
+    },
   }
 }
